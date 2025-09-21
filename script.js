@@ -13,7 +13,7 @@ const route = (event) => {
 };
 
 const handleLocation = async () => {
-  const path = window.location.hash || "#/quiz1";
+  const path = window.location.hash || "/quiz1";
   const routePath = routes[path];
 
   if (routePath) {

@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+
+  background: rgba(255, 255, 255, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13.8px);
+  -webkit-backdrop-filter: blur(13.8px);
+}
+
+header .logo {
+  color: #fff;
+  font-size: 45px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  transition: 0.3s;
+  background: #2f2f2f;
+}
+
+header nav a:hover{
+  background: #ffffff;
+  color: #424242;
+}
+
+/*Homepage*/
+.Home {
+  height: 100vh;
+  background-image: url("Beatles.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  position: relative;
+}
+
+.Home-content {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  /* background: linear-gradient(135deg, #363636, #feb47b);  */
+  background: #2b2a2a76;
+  padding: 40px 600px;
+  border-radius: 75px;
+}
+
+.Home h1 {
+  font-size: 60px;
+}
+
+.Home-content p {
+  font-size: 10px;
+  text-align: center;
+}
+
+/*Profile*/
+.Profile{
+  background-color: #0d0d0d;
+  border-bottom: #ffffff14 3px solid;
+}
+.pp_text {
+  font-size: 20px;
+  padding: 20px;
+  background-color: #111111;
+  padding: 180px 25px 180px 100px;
+  border-radius: 20px;
+}
+
+.pp_text h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-align: end;
+}
+
+.Profile {
+  padding: 120px 50px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Profile-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: none;
+  padding: 0 50px;
+}
+
+.Profile-content img {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.profile_text { 
+  gap: 50px;
+}
+
+
+.profile_text h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.profile_text p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+/*Hometown*/
+.Hometown {
+  padding: 100px 20px;
+  min-height: 100vh;
+}
+
+.H3_title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.img_folder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-right: 30px;
+  margin-left: 30px;
+  gap: 30px;
+}
+
+
+.img_folder img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.Hometown-content p{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  margin-bottom: 50px;
+  padding: 0 500px;
+}
+
+
+/* local food */
+.Local-food {
+  padding: 100px 20px;
+  min-height: 100vh;
+}
+
+.H4_title {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.local_food_img {
+  display: grid;
+  grid-template-columns: 700px 700px;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 100px;
+}
+
+.local_food_img img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.local_food_img .food_text {
+  font-size: 25px;
+  color: #ddd;
+  text-align: justify;
+}
+
+/* tourist */
+.Tourist-place-content p{
+  background-color: #0d0d0d;
+  align-items: center;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.H5_title {
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  padding: 100px 50px 50px 50px;
+}
+
+.img_folder2 {
+  gap: 30px;
+  align-items: center;
+  justify-items: center;
+  padding: 0 70px;
+  display: grid;
+}
+
+.img_folder2 img {
+  width: 100vh;
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.img_folder2 h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+

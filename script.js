@@ -1,9 +1,9 @@
 const routes = {
-  "/quiz1": "quiz1/Homepage.html",
-  "/quiz1/profile": "quiz1/Profile.html",
-  "/quiz1/hometown": "quiz1/Hometown.html",
-  "/quiz1/food": "quiz1/Local_Food.html",
-  "/quiz1/tourist": "quiz1/Tourist_Place.html"
+  "#/quiz1": "quiz1/Homepage.html",
+  "#/quiz1/profile": "quiz1/Profile.html",
+  "#/quiz1/hometown": "quiz1/Hometown.html",
+  "#/quiz1/food": "quiz1/Local_Food.html",
+  "#/quiz1/tourist": "quiz1/Tourist_Place.html"
 };
 
 const route = (event) => {
@@ -13,7 +13,7 @@ const route = (event) => {
 };
 
 const handleLocation = async () => {
-  const path = window.location.hash || "/quiz1";
+  const path = window.location.hash || "#/quiz1";
   const routePath = routes[path];
 
   if (routePath) {
